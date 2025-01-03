@@ -1,0 +1,270 @@
+
+.base-container {
+  height: 100vh !important;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.inner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#logoPic {
+  margin-left: 20px;
+}
+.vanising-div {
+  height: 80%;
+  color: #ffffff;
+  padding: 0;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .vanising-div {
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+}
+.small-font {
+  font-size: 13px !important;
+}
+
+/*header design*/
+.offcanvas {
+  background-color: #192532 !important;
+}
+/*Sidebar-*/
+.side-nav {
+  left: 0;
+  height: 100vh;
+  width: 50px;
+  position: fixed;
+}
+.link-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.black-nav {
+  height: 100vh;
+  background-color: black;
+}
+.nav-logo {
+  width: 100px;
+  margin-left: 150px;
+  transition: margin-left 0.2s;
+}
+.nav-logo.closed {
+  margin-left: 5px;
+  transition: margin-left 0.2s;
+}
+
+.main {
+  margin-left: 50px;
+  transition: margin-left 0.3s;
+  padding: 5px;
+  width: 100%;
+}
+.sidebar.closed ~ .main {
+  margin-left: 40px;
+}
+/*form Design*/
+.reg-link[aria-expanded="true"] {
+  width: 130px;
+  font-weight: 500;
+  color: #ffffff !important;
+  border-top: 2px solid white; /* Ensure color stays white when active */
+}
+.form_wrapper {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  border: 1px solid rgb(240, 239, 239);
+  border-radius: 5px;
+}
+.form_wrapper h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5px;
+}
+.form_wrapper .title_container {
+  text-align: center;
+  font-size: medium;
+}
+.form_wrapper h3 {
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5px;
+}
+.form_wrapper label {
+  font-size: 12px;
+}
+.form_wrapper .row {
+  margin: 10px -15px;
+}
+.form_wrapper .row > div {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.color-header {
+  color: #2f2d66;
+}
+.header {
+  position: fixed;
+  top: 1;
+  width: 100%;
+}
+.header-color {
+  background-color: #192532;
+}
+/*button Design*/
+.btn-width {
+  width: 60px;
+  padding: 3px 3px;
+}
+.btn-font-size {
+  font-size: 12px;
+}
+/*input Design*/
+.color-label {
+  background-color: #2f2d66;
+  color: white;
+}
+.color-label:hover {
+  background-color: #25a354;
+  color: white;
+}
+.small-icon {
+  font-size: "16px";
+}
+/*footer*/
+
+.credit a {
+  color: #0a79e1;
+}
+
+#board {
+  background-color: aqua;
+  border-radius: 67% 33% 53% 47% / 62% 49% 51% 38%;
+}
+
+.btn-color {
+  color: white;
+}
+.brand-width {
+  width: 300;
+}
+
+#menu {
+  visibility: hidden;
+  width: 0;
+}
+.small {
+  font-size: 12px;
+}
+
+.small-link {
+  font-size: 14px !important;
+}
+
+.margin-open {
+  margin-left: 40px;
+}
+.margin-close {
+  margin-left: 30px;
+}
+
+.body-height {
+  height: 80%;
+}
+
+@media (max-width: 576) {
+  .sidebar {
+    height: auto;
+    width: 220px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar-title {
+    margin: 0;
+    color: white;
+  }
+  .body-height {
+    height: max-content;
+    margin-bottom: 50px;
+  }
+  #ImgGrid {
+    height: 0;
+    width: 0;
+  }
+  #menu {
+    visibility: visible;
+    width: fit-content;
+  }
+  .hrtag {
+    visibility: visible !important;
+    border: 1px solid white;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .sidebar {
+    width: 220px;
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+  .sidebar.open .sidebar-header h3 {
+    display: block;
+  }
+  .sidebar.open a span {
+    display: inline;
+  }
+  .sidebar.open ~ .main {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    font-family: "play", sans-serif;
+    cursor: pointer;
+    padding: 0 12px 20px 5px !important;
+  }
+  .offcanvas-title {
+    color: rgb(199, 199, 199) !important;
+    flex-grow: 1;
+  }
+  .offcanvas-header {
+    padding: 20px 10px 0 10px;
+    margin: 0;
+  }
+  .offcanvas-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+  }
+  .dropdown-menu {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
