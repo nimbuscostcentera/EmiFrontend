@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import ImgLogo from "../../Asset/nimbussystems_logo.jfif";
+import ImgLogo from "../../Asset/logo.png";
 
 import InputBox from "../../Component/InputBox";
 import SubmitButton from "../../Component/SubmitButton";
@@ -75,7 +75,7 @@ function LoginPage() {
       <div className="formWrapper" style={{width:"100%"}}>
         <div className="form-layout mt-4 pt-2 pb-3 px-3" style={{width:"60vh"}}>
           <div className="d-flex justify-content-center align-items-center">
-            <img src={ImgLogo} width="20%" />
+            <img src={ImgLogo} width="25%" />
           </div>
 
           <div className="d-flex justify-content-center align-items-center">

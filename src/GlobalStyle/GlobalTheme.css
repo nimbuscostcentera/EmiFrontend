@@ -41,9 +41,10 @@
   height: 95vh;
 }
 .logoPic{
-  width: 120px;
+  width: 36px;
   margin-left:10px;
 }
+
 .navbar {
   box-shadow: 1px 1px 2px rgb(211, 211, 211);
   background-color: #192532;

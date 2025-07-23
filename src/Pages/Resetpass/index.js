@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import ImgLogo from "../../Asset/nimbussystems_logo.jfif";
+import ImgLogo from "../../Asset/logo.png";
 
 import InputBox from "../../Component/InputBox";
 import SubmitButton from "../../Component/SubmitButton";

@@ -19,8 +19,8 @@ function Footer() {
       id="foot"
     >
       Copyright &nbsp;
-      <a href="#"> Nimbus Systems Pvt. Ltd. </a>
-      &nbsp; 2024
+      <a href="#"> Winpace Solution Pvt. Ltd. </a>
+      &nbsp; {new Date().getFullYear()}
     </div>
   );
 }

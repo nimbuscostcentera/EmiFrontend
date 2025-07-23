@@ -3,15 +3,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import "bootstrap/dist/js/bootstrap.min";
 import "./LoginHeader.css";
-import img from "../../Asset/Nimbus_Logo_Transparent_white.png";
+import img from "../../Asset/logo.png";
 import { useNavigate, NavLink } from "react-router-dom";
 function AuthLayoutWrapper() {
   return (
     <nav className="navbar navbar-expand-lg stickey-top">
       <div className="container-fluid ">
         <div className="px-3" style={{ width: "280px" }}>
-          <a className="navbar-brand" href="https://www.nimbussystems.co.in/">
-            <img src={img} alt="Nimbus System Pvt. Ltd." width="65%" />
+          <a
+            href="https://www.winpace-solution.co.in/"
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={img}
+              alt="Winpace Solution Pvt. Ltd."
+              id="logoNimbus"
+              className={`logoPic`}
+            />
+            <h6 className="white-icon m-1">Winpace Solution Pvt. Ltd.</h6>
           </a>
         </div>
 
@@ -42,11 +56,11 @@ function AuthLayoutWrapper() {
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
-              <bi className="bi bi-x-lg" style={{fontSize:"20px"}}></bi>
+              <bi className="bi bi-x-lg" style={{ fontSize: "20px" }}></bi>
             </button>
           </div>
           <div className="vanising-div">
-            <hr/>
+            <hr />
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -57,7 +71,7 @@ function AuthLayoutWrapper() {
                     isActive ? "nav-link active" : "nav-link"
                   }
                   aria-current="page"
-                  to="https://www.nimbussystems.co.in/about-us/"
+                  to="https://www.winpace-solution.co.in/about-us/"
                   end
                 >
                   About Us
@@ -70,7 +84,7 @@ function AuthLayoutWrapper() {
                     isActive ? "nav-link active" : "nav-link"
                   }
                   aria-current="page"
-                  to="https://www.nimbussystems.co.in/contact-us/"
+                  to="https://www.winpace-solution.co.in/contact-us/"
                   end
                 >
                   Contact Us

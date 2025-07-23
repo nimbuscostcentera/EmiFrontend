@@ -5,7 +5,7 @@ import { Offcanvas, Nav, Button, Container, Navbar } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import Image from "../../Asset/Nimbus_Logo_Transparent_white.png";
+import Image from "../../Asset/logo.png";
 import "./authNavBar.css";
 import "../../GlobalStyle/GlobalTheme.css";
 import SideBar from "./SideBar";
@@ -23,15 +23,24 @@ function AuthNavBar() {
     }
   },[Open])
   return (
-    <nav className="navbar px-0 mx-0 d-flex justify-content-between" id="head-nav">
+    <nav
+      className="navbar px-0 mx-0 d-flex justify-content-between"
+      id="head-nav"
+    >
       <div>
-        <a href="https://www.nimbussystems.co.in/">
+        <a
+          href="https://www.winpace-solution.co.in/"
+          style={{ textDecoration: "none", display: "flex" , justifyContent:"flex-start", alignItems:"center" }}
+        >
           <img
             src={Image}
-            alt="Nimbus System Pvt. Ltd."
+            alt="Winpace Solution Pvt. Ltd."
             id="logoNimbus"
             className={`logoPic`}
           />
+          <h6 className="white-icon m-1" >
+            Winpace Solution Pvt. Ltd.
+          </h6>
         </a>
       </div>
       <div className="">
@@ -45,7 +54,7 @@ function AuthNavBar() {
           <i className="bi bi-bell-fill white-icon"></i>
         </Link>
         <Button
-          style={{padding:0,margin:0}}
+          style={{ padding: 0, margin: 0 }}
           variant="link"
           onClick={() => {
             window.localStorage.clear();

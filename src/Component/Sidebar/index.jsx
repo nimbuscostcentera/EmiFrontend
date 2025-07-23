@@ -6,7 +6,7 @@ import { ClearState } from "../../Slice/AuthSlice";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
 import "./Sidebar.css";
-import img from "../../Asset/Nimbus_Logo_Transparent_white.png";
+import img from "../../Asset/logo.png";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -16,8 +16,11 @@ function Sidebar() {
     <nav className="navbar navbar-expand-lg top-head sticky-top">
       <div className="container-fluid ">
         <div className="logo-box header-container">
-          <a className="navbar-brand" href="https://www.nimbussystems.co.in/">
-            <img src={img} alt="Nimbus System Pvt. Ltd." width="70%" />
+          <a
+            className="navbar-brand"
+            href="https://www.winpace-solution.co.in/"
+          >
+            <img src={img} alt="Winpace Solution Pvt. Ltd." width="70%" />
           </a>
         </div>
 

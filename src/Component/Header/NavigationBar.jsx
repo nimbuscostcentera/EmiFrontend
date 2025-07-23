@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.min";
 import { Navbar, Container, Nav, Offcanvas, Button } from "react-bootstrap";
-import Image from "../../Asset/Nimbus_Logo_Transparent_white.png";
+import Image from "../../Asset/logo.png";
 
 const NavigationBar = () => {
   const [show, setshow] = useState(false);
@@ -14,18 +14,24 @@ const NavigationBar = () => {
     setshow(true);
   };
   return (
-    <Navbar key={"md"} expand={"md"} className="header header-color py-0 my-0" style={{ width:"100vw"}}>
+    <Navbar
+      key={"md"}
+      expand={"md"}
+      className="header header-color py-0 my-0"
+      style={{ width: "100vw" }}
+    >
       <Container fluid className="px-4">
         <Navbar.Brand
-          href="https://www.nimbussystems.co.in/"
-          style={{ width: "145px" }}
+          href="https://www.winpace-solution.co.in/"
+          style={{ width: "145px" , display:"flex", justifyContent:"flex-start", alignItems:"center" }}
         >
           <img
             src={Image}
-            alt="Nimbus System Pvt. Ltd."
-            width="100%"
-            style={{ padding: "2px 0px" }}
+            alt="Winpace Solution Pvt. Ltd."
+            width="45px"
+            // style={{ padding: "2px 0px" }}
           />
+          <h6 style={{ color: "white", paddingTop: "8px" }}>Winpace Solution Pvt. Ltd.</h6>
         </Navbar.Brand>
 
         <Button variant="dark" onClick={handleShow} id="menu">
@@ -41,7 +47,10 @@ const NavigationBar = () => {
           responsive="md"
           className="header-color"
         >
-          <Offcanvas.Header className="py-2 px-3" style={{borderBottom:"1px solid white"}}>
+          <Offcanvas.Header
+            className="py-2 px-3"
+            style={{ borderBottom: "1px solid white" }}
+          >
             <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
               Menu
             </Offcanvas.Title>
@@ -56,13 +65,13 @@ const NavigationBar = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-4">
               <Nav.Link
-                href="https://www.nimbussystems.co.in/contact-us/"
+                href="https://www.winpace-solution.co.in/contact-us/"
                 className="small-link"
               >
                 About Us
               </Nav.Link>
               <Nav.Link
-                href="https://www.nimbussystems.co.in/about-us/"
+                href="https://www.winpace-solution.co.in/about-us/"
                 className="small-link"
               >
                 contact Us
