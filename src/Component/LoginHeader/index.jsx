@@ -71,7 +71,7 @@ function AuthLayoutWrapper() {
                     isActive ? "nav-link active" : "nav-link"
                   }
                   aria-current="page"
-                  to="https://www.winpace-solution.co.in/about-us/"
+                  to="https://www.winpace-solution.co.in/about-3"
                   end
                 >
                   About Us
@@ -84,7 +84,7 @@ function AuthLayoutWrapper() {
                     isActive ? "nav-link active" : "nav-link"
                   }
                   aria-current="page"
-                  to="https://www.winpace-solution.co.in/contact-us/"
+                  to="https://www.winpace-solution.co.in/contact-3"
                   end
                 >
                   Contact Us

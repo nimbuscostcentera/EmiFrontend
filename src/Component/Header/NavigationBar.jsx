@@ -23,7 +23,12 @@ const NavigationBar = () => {
       <Container fluid className="px-4">
         <Navbar.Brand
           href="https://www.winpace-solution.co.in/"
-          style={{ width: "145px" , display:"flex", justifyContent:"flex-start", alignItems:"center" }}
+          style={{
+            width: "145px",
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center",
+          }}
         >
           <img
             src={Image}
@@ -31,7 +36,9 @@ const NavigationBar = () => {
             width="45px"
             // style={{ padding: "2px 0px" }}
           />
-          <h6 style={{ color: "white", paddingTop: "8px" }}>Winpace Solution Pvt. Ltd.</h6>
+          <h6 style={{ color: "white", paddingTop: "8px" }}>
+            Winpace Solution Pvt. Ltd.
+          </h6>
         </Navbar.Brand>
 
         <Button variant="dark" onClick={handleShow} id="menu">
@@ -65,13 +72,13 @@ const NavigationBar = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-4">
               <Nav.Link
-                href="https://www.winpace-solution.co.in/contact-us/"
+                href="https://www.winpace-solution.co.in/about-3"
                 className="small-link"
               >
                 About Us
               </Nav.Link>
               <Nav.Link
-                href="https://www.winpace-solution.co.in/about-us/"
+                href="https://www.winpace-solution.co.in/contact-3"
                 className="small-link"
               >
                 contact Us
